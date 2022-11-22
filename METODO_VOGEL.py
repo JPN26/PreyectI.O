@@ -8,6 +8,10 @@ sumaoferta=0
 sumademanda=0
 destinos2=0
 origenes2=0
+origenes=0
+destinos=0 
+oferta=0 
+demanda=0
 res = []
 val = []
 def getValores(opc,ORI,DES):
@@ -230,7 +234,7 @@ def resultado_final(resulatos,multiplo):
     print(f"costo minimo: {sumatotal}")
             
 def vogel():
-
+    global origenes, destinos, oferta, demanda
     origenes=int(input(Fore.RED +"\t\t\t\tIntroducir el numero de origenes.  "))
     destinos=int(input(Fore.RED+"\t\t\t\tIntroducir el numero de destino.   "))
     oferta=getOferta(origenes)
