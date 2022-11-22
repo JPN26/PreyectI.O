@@ -14,6 +14,10 @@ sumaoferta=0
 sumademanda=0
 destinos2=0
 origenes2=0
+origenes=0
+destinos=0 
+oferta=0 
+demanda=0
 def getValores(opc,ORI,DES):
     global valores,destinos2,origenes2
     if(opc==1):
@@ -158,7 +162,7 @@ def imprimirResultados(res):
             n += res[x] * res[y]
 
 def Esquina():
-
+    global origenes, destinos, oferta, demanda
     origenes=int(input(Fore.RED +"\t\t\t\tIntroducir el numero de origenes.  "))
     destinos=int(input(Fore.RED +"\t\t\t\tIntroducir el numero de destino.   "))
     oferta=getOferta(origenes)
